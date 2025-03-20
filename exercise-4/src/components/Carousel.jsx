@@ -11,9 +11,7 @@ export const Carousel = ({ images }) => {
     ));
   }
   function goRight(){
-    setImgNo((n)=>(
-      (images.length - 1 )? 0 : n+1
-    ));
+    setImgNo((n) => (n === images.length - 1 ? 0 : n + 1));
   }
   /* You will need to manage the cases when we are on the last image or first image*/
   return (
